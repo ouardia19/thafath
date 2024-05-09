@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>a propos de nous</title>
+
+
+<style>
+p{
+color:#fffefd;
+font-style: italic;
+text-align:center;
+padding:200px; 
+font-size:25px;
+}
+body{
+  background-image: url(./images/bb3.jpg);
+  background-size: 100%;
+}
+
+
+</style>
+</head>
+<body>
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+    const paragraph = document.querySelector('p');
+    paragraph.style.opacity = 0;
+    paragraph.style.transition = 'opacity 2s';
+
+    setTimeout(() => {
+        paragraph.style.opacity = 1;
+    }, 500);
+});
+ </script>
+    <p><strong>Bienvenue chez <span style="color: rgb(255, 139, 31) ;">Gusto Italiano</span>, où chaque plat raconte
+    une histoire d'amour entre l'Italie et la gastronomie. Depuis notre ouverture, nous avons
+     embrassé l'essence même de la cuisine italienne pour offrir à nos clients une expérience authentique
+      et inoubliable. Chez Gusto Italiano, 
+       Que vous soyez un amateur de pizza croust
+       illante, un passionné de pâtes al dente , notre menu 
+       diversifié saura combler toutes vos envies. Chez <span style="color: rgb(255, 139, 31 );">Gusto Italiano</span> nous accordons une importance
+        particulière à l'ambiance. Notre décor rustique et chaleureux vous invite à vous détendre et 
+        à profiter de chaque moment passé en notre compagnie. Nous sommes fiers de notre héritage 
+        italien et de l'accueil chaleureux que nous réservons à chacun de nos clients. Venez nous 
+        rendre visite chez <span style="color:  rgb(255, 139, 31);">Gusto Italiano</span> et laissez-nous vous faire découvrir la véritable passion
+         de la cuisine italienne.</strong></p>
+
+</body>
+
+</html>

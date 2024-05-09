@@ -1,0 +1,91 @@
+ *{
+        margin:0px;
+        padding:0px;
+        box-sizing: border-box;
+        font-family: 'poppins' , sans-serif;
+        scroll-behavior: smooth;
+
+    }
+  
+    header{
+        position :fixed;
+        top:0%;
+        right: 1%;
+        left:0%;
+        padding:20px 10px;
+        width:100%;
+        z-index: 1;
+        display:flex ;
+        justify-content: space-between;
+        align-items: center;
+        transition:0.5s;
+           }
+    .logo{
+      color:#eff3f1;
+      font-size: 2em;
+      font-weight: bold;
+      text-decoration: none;
+     }
+  
+     .navbar{
+        display:flex;
+        position: relative;
+
+     }
+    .navbar li {
+        list-style: none;
+     }
+    .navbar a {
+     color:rgb(247, 245, 248);
+     text-decoration: none;
+     margin-left:30px ;
+     font-weight: 700 ;
+
+    }
+    header .navbar li a:hover{
+        color:#dd6c37;
+        border-bottom: 2px solid #dd6c37;
+    }
+    .banniere{
+        position:relative;
+        width:100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./images/jjjj.jpg);
+        background-size: cover;
+    }
+    .banniere .contenu {
+        max-width: 70%;
+        text-align: center;
+    }
+    .banniere .contenu h2{
+        color:#b8420bbb;
+        font-size:3em;
+        text-transform: capitalize;
+    }
+    .contenu p:nth-child(2){
+        color: rgb(255, 255, 255);
+        font-size: 2em;
+
+    }
+    .menutoggle{
+        position:relative;
+        width:40px;
+        height:40px;
+        background-image: url(./style.css/images.jjjj.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menutoggle.active{
+        background-image: url(./images/close.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-origin: center;
+    }
+    header.sticky.menutoggle{
+        filter:invert();
+    }
+
